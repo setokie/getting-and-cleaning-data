@@ -1,6 +1,6 @@
 ### run_analysis.R
 
-This is the R script that performs cleaning and  tidying of the dataset with steps listed below.
+This is the R script that performs cleaning and  tidying of the data set with steps listed below.
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
