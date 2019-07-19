@@ -1,5 +1,4 @@
 library(dplyr)
-setwd("E://R/")
 
 # setting up data source url link, and working directory
 # to store the downloaded datasets
@@ -53,3 +52,6 @@ HARdata <- cbind(x_data, y_data, subject_data)
 average_HARdata <- HARdata %>%
         group_by(activity, subject) %>%
         summarise_all(funs(mean))
+
+# write the tidy table set to upload
+write.table(average_HARdata, file = "average_HARdata.txt", row.names = F)
